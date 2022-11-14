@@ -1,5 +1,4 @@
 class GrassEater {
-
     constructor(x, y, id) {
         this.x = x;
         this.y = y;
@@ -114,8 +113,9 @@ class GrassEater {
             this.y = newY;
 
             this.energy--;
-
-        } else {
+        } 
+        
+        else {
 
             this.energy--;
 

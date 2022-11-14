@@ -21,7 +21,6 @@ class Grass {
     chooseCell(character) {
         var found = [];
         for (var i in this.directions) {
-
             var x = this.directions[i][0]; // Left one in this.directions
             var y = this.directions[i][1]; // Right one in this.directions
 

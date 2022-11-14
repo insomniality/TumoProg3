@@ -1,5 +1,4 @@
 class Predator {
-
     constructor(x, y, id) {
         this.x = x;
         this.y = y;
