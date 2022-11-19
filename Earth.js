@@ -15,38 +15,25 @@ class Earth {
 
     }
 
-
-
     stay() {
-
-
-
         if (this.energy <= 0) {
-
             for (var i in earthArr) {
                 if (this.x == earthArr[i].x && this.y == earthArr[i].y) {
                     earthArr.splice(i, 1);
                     break;
                 }
             }
-
             var newGrass = new Grass(this.x, this.y, 1);
             grassArr.push(newGrass);
 
             matrix[this.y][this.x] = 1;
-
         }
-
         else {
-
             if (Math.round(Math.random() * 1000) < 25) {
-
                 matrix[this.y][this.x] = 4;
 
                 var newEarthDist = new EarthDist(this.x, this.y, 4, Math.round(random(0, 3)));
                 earthDistArr.push(newEarthDist);
-
-
                 for (var i in earthArr) {
                     if (this.x == earthArr[i].x && this.y == earthArr[i].y) {
                         earthArr.splice(i, 1);
@@ -55,13 +42,7 @@ class Earth {
                 }
 
             }
-
             this.energy--;
-
-
         }
-
-
-
     }
 }

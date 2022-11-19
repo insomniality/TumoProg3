@@ -11,13 +11,6 @@ var predatorArr = [];
 var earthDistArr = [];
 var earthArr = [];
 
-
-
-
-
-
-
-
 function matrixGenerator(size) {
 
     var newMatrix = [];
