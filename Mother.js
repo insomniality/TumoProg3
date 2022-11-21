@@ -1,4 +1,4 @@
-module.exports = class mother {
+class mother {
     constructor(x, y, id) {
         this.x = x;
         this.y = y;
@@ -138,3 +138,5 @@ module.exports = class mother {
     }
 
 }
+
+module.exports = mother;
